@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function DisasterDashboard() {
   const [data, setData] = useState(null);
-
+//hi
   useEffect(() => {
     axios.get("/api/disaster-insights").then((res) => setData(res.data));
   }, []);
